@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card text-bg-dark">
+        <img src="img/git.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+            <br><br><br><br><br><br><br><br><br>
+          <h1 class="display-1">Git 101</h1>
+          <p class="h3" style="text-align: center; color: purple;">Learn to install and configure Git <br>in VS Code and do basic operations, <br>such as commit, 
+            pull, push, and <br> branching in this Git 101 lesson. 
+          </p>
+        </div>
+    </div>
+<br><br><br>
+    <h1 class="display-1">GitHub Tutorial for Mac</h1>
+
+    <div class="container-fluid">
+        <h3 class="display-3">1. &nbsp; Install Git <hr></h3>
+        <p class="h3">To install Git, go to the google search bar and type in "install git." One of the first looks that 
+        should pop up is a tutorial from github's website. Click on said site. After the page has loaded, scroll down 
+        until you see the heading "Install on Mac." There will be a link to install "macOS Git Installer." Click on said link to 
+        install Git on your device. 
+        </p>
+    </div>
+
+    <!-- LAYOUT FOR STEPS WITH IMAGES -->
+    <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/install_vs.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+                <h3 class="display-3">2. &nbsp; Install VS Code <hr></h3>
+                <p class="h3">To install VS Code, go to their officially website and click on the "Download" button in the top right corner.
+                    On this page click on the "Mac" button to install VS Code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+    <div class="container-fluid">
+        <h3 class="display-3">3. &nbsp; Enable Github on VS Code<hr></h3>
+        <p class="h3"> 
+            - Go to File > Preferences <br>
+            - Go to Settings <br>
+            - Type Git: Enabled in the search bar <br>
+            - Make sure that the box is ticked
+        </p>
+    </div>
+
+    <div class="container-fluid">
+        <h3 class="display-3">4. &nbsp; Create Account or Sign in to Github<hr></h3>
+    </div>
+
+    <div class="container-fluid">
+        <h3 class="display-3">5. &nbsp; Configure Github in VS Code<hr></h3>
+        <p class="h3"> Open up Terminal and type "$ git config --global user.name "Your Name" and the click enter. After that type
+        type in "$ git config --global user.email "youremail@github.com" and then click enter. 
+        </p>
+    </div>
+    <div class="container-fluid">
+        <h3 class="display-3">6. &nbsp; Verify Git is linked to Github<hr></h3>
+        <p class="h3"> 
+            When your details are configured in Git, you can type in "$ git config --global --list" in the Terminal and click enter.
+            Your previously typed email and username should pop up. You are connected to Git through VS Code!
+        </p>
+    </div>
+   
+<br> <br>  <hr style="height:4px; background-color: black"> <br><br>
+    <h1 class="display-1">Cloning Repository</h1>
+
+
+    <div class="container-fluid">
+        <h3 class="display-3">1. &nbsp; GitHub Repository<hr></h3>
+        <p class="h3"> 
+            - Go to Github and log in to account  <br>
+            - Go to your repository and click on the "Code" button <br>
+            - Copy the HTTPS url
+        </p>
+    </div>
+    <div class="container-fluid">
+        <h3 class="display-3">2. &nbsp; VS Code<hr></h3>
+        <p class="h3"> 
+            - Go to VS Code  <br>
+            - Open command palette by pressing "cmd + shift + P" <br>
+            - Type "Git:Clone" <br>
+            - paste HTTPS url 
+        </p>
+    </div>
+    <div class="container-fluid">
+        <h3 class="display-3">3. &nbsp; Select Repository Location<hr></h3>
+        <p class="h3"> 
+            - You will be prompted to choose where to put this project on your device- choose desired folder or create one <br>
+            - A window pop-up will appear asking to open in new window or existing <br>
+            - Click on desired option and you repository is cloned
+        </p>
+    </div>
+
+    <br> <br>  <hr style="height:4px; background-color: black"> <br><br>
+
+    <h1 class="display-1">Pulling a File from Remote Github to Git configured in VS Code </h1>
+
+
+<div class="container-fluid">
+        <h3 class="display-3">1. &nbsp;  Remote Github Repository <hr></h3>
+
+        <p class="h3">
+          - Go to your repository on Github <br>
+          - Click on "Add File" then click on "create new file" <br>
+          - Name your file and add file content  <br>
+          - Then Click "Commit Changes" to add file into remote Github repository 
+        </p>
+</div>
+<div class="container-fluid">
+    <h3 class="display-3">2. &nbsp;  Pull on VS Code <hr></h3>
+
+    <p class="h3">
+      - Go to source control <br>
+      - Click on the ellipse <br>
+      - Click on "pull"  <br>
+      - Then go back to your explorer tab and you will see the file from remote Github on VS Code
+    </p>
+</div>
+
+<br> <br>  <hr style="height:4px; background-color: black"> <br><br>
+
+<h1 class="display-1">Pull Request</h1>
+
+<div class="container-fluid">
+    <p class="h3"> 
+        - Create a new branch <br>
+        - After creating a new branch add a new file <br>
+        - Then go to the Github tab  <br>
+        - Click on the "create pull request" icon <br>
+        - Go back to Github and go to the "Pull Request" section <br>
+        - Scroll down then click "Merge pull request" to combine the file in the new branch with the main one
+    </p>
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
